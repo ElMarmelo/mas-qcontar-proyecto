@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="">
-       
+        
         <nav class="navbar">
             <img width="50px" height="50px" class="logo" src="./public/src/logoqc.png" alt="Logo Sitio web">
             <ul class="menu">
@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-
+    
     <div id="content">
     </div>
     <footer class="footer-distributed">
@@ -37,11 +37,12 @@
                 <a href="">Sobre mí</a>
                 <a href="">Blog</a>
                 <a href="">Hablemos</a>
-                <a href="">Login</a>
+                <a id="login" onclick="ROUTER.load('login')">Login</a>
             </p>
             <p style="color: #fff;">Hecho con <i class="fa fa-heart"></i> en <img width="20px" src="./public/src/bandera-cr.png" alt="Bandera de Costa Rica" srcset=""></p>
         </div>
     </footer>
+
     <script src="./root/js/router.js"></script>
     <script src="./root/js/routes.js"></script>
     <script src="./root/js/index.js"></script>
