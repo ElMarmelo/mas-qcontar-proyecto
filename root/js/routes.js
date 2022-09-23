@@ -14,7 +14,7 @@ const PATHS = {
     </div>
     </div>
     <div class="info-divider">
-    <h1>¿Que hacemos en +QContar?</h1>
+    <h1>La historia de +QContar</h1>
     </div>
     <div class="about-us">
     <img src="./public/src/about-qc.jpg" alt="Imagen de fondo descripción de la empresa">
@@ -141,32 +141,32 @@ const PATHS = {
     <div class="testimonials-section">
     <figure class="testimonial">
     <figcaption>
-     <blockquote>
-       <p>Trabajar con +QContar ha sido una experiencia muy agradable</p>
-     </blockquote>
-     <h3>Jonathan Sánchez</h3>
-     <h4>Empresa 1</h4>
+    <blockquote>
+    <p>Trabajar con +QContar ha sido una experiencia muy agradable</p>
+    </blockquote>
+    <h3>Jonathan Sánchez</h3>
+    <h4>Empresa 1</h4>
     </figcaption> 
-   </figure>
-   <figure class="testimonial">
-     <figcaption>
-       <blockquote>
-         <p>Hola esto es un texto de figcaptio</p>
-       </blockquote>
-       <h3>Persona 2</h3>
-       <h4>Empresa 2</h4>
-     </figcaption>
-   </figure>
-   <figure class="testimonial">
-     <figcaption>
-       <blockquote>
-         <p>Hola esto es un texto de figcaption</p>
-       </blockquote>
-       <h3>Persona 3</h3>
-       <h4>Empresa 3</h4>
-     </figcaption>
-   </figure>
-   </div>`,
+    </figure>
+    <figure class="testimonial">
+    <figcaption>
+    <blockquote>
+    <p>+QContar me ha ayudado a optimizar las finanzas de mi PYME</p>
+    </blockquote>
+    <h3>Jeff Bezos</h3>
+    <h4>Amazon</h4>
+    </figcaption>
+    </figure>
+    <figure class="testimonial">
+    <figcaption>
+    <blockquote>
+    <p>Las colaboraciones con +Qcontar han sido muy satisfactorias de momento</p>
+    </blockquote>
+    <h3>Alejandro Sanz</h3>
+    <h4>Empresa 3</h4>
+    </figcaption>
+    </figure>
+    </div>`,
   },
   about: {
     path: "/about",
@@ -179,7 +179,38 @@ const PATHS = {
   },
   hablemos: {
     path: "/hablemos",
-    template: `<h1>Conversa conmigo<h1>`,
+    template: `    <div class="info-divider">
+    <h1>¿Qué espera para comunicarse con nosotros?</h1>
+    </div>
+    <div class="contact-form">
+    <form action="#">
+    
+    <label for="name">Nombre</label>
+    <input type="text" id="fname" name="firstname" placeholder="Su Nombre">
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="company-mail" name="companymail" placeholder="Su correo de la empresa">
+    
+    <label for="enterprise">Empresa</label>
+    <input type="text" id="company" name="companyname" placeholder="Nombre de su empresa">
+    
+    <label for="interestedin">¿En que servicio está interesado?</label>
+    <select id="interested-in" name="interestedin">
+    <option value="contableservices">Servicios contables</option>
+    <option value="finbudgets">Presupuestos y analisis financieros</option>
+    <option value="automatization">Automatización y rediseño de procesos contables</option>
+    <option value="tribassesory">Asesoría tributaria</option>
+    <option value="finheatlh">Salud Financiera</option>
+    <option value="cloudinfraestructure">Infraestructura en la nube</option>
+    </select>
+    
+    <label for="subject">Descripción</label>
+    <textarea id="subject" name="subject" placeholder="Denos una breve descripción sobre la situación actual de su empresa" style="height:200px"></textarea>
+    
+    <input type="submit" value="Enviar" action="//Dennis ponga lo que su corazón le diga">
+    
+    </form>
+    </div>`,
   },
   login: {
     path: "/login",
