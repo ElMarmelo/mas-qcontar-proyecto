@@ -175,7 +175,7 @@ const PATHS = {
   },
   blog: {
     path: "/blog",
-    template: `<h1>Mi blog<h1>`,
+    template: `<a id="blog1" onclick="ROUTER.load('blog1')">Entrada del blog</a>`,
   },
   hablemos: {
     path: "/hablemos",
@@ -216,4 +216,8 @@ const PATHS = {
     path: "/login",
     template: `<h1>Inicio de sesión como administrador<h1>`,
   },
+  blog1: {
+    path: "/blog-1",
+    template: `<h1>Esta es la primera entrada del blog</h1>`
+  }
 };

@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary: #580E38;
+  --secondary:#6B0F1A;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,8 +28,9 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: teal;
-    color: #fff
+    background-color: #fff;
+    color: #000;
+    border-bottom: 5px solid var(--primary);
 }
 
 .menu {
@@ -34,10 +40,10 @@ li {
 }
 
 .menu li:hover {
-    background-color: #4c9e9e;
+    color: #FFF;
+    background-color: var(--primary);
     border-radius: 5px;
-    transition: 0.3s ease;
-}
+    transition: 0.3s ease;}
 
 .menu li {
     padding: 5px 14px;
@@ -131,8 +137,7 @@ li {
     padding: 50px;
     text-align: center;
     color: white;
-    background: hsl(345, 45%, 48%);
-    background: linear-gradient(90deg, rgba(179,68,96,0.8029411593739058) 100%, rgba(0,212,255,0) 100%);
+    background:#6B0F1A;
     margin-left: 25%;
     margin-right: 25%;
     font-size: 24px;
@@ -158,7 +163,7 @@ li {
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, #b34460 50%);
+    background: linear-gradient(#ffffff 50%,#6B0F1A 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
     border-radius: 5px;
@@ -179,7 +184,7 @@ li {
     letter-spacing: 0.03em;
   }
   .icon-wrapper {
-    background-color: #b34460;
+    background-color:#6B0F1A;
     position: relative;
     margin: auto;
     font-size: 30px;
@@ -196,7 +201,7 @@ li {
   }
   .card:hover .icon-wrapper {
     background-color: #ffffff;
-    color: #b34460;
+    color:#6B0F1A;
   }
   .card:hover h3 {
     color: #ffffff;
@@ -240,7 +245,7 @@ li {
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
-  border-top: 5px solid #b34460;
+  border-top: 5px solid var(--secondary);
 }
 .testimonial *, .testimonial *::before{
   -webkit-box-sizing: border-box;
@@ -257,7 +262,7 @@ li {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: #b34460;
+  color: var(--secondary);
   content: "\f10e";
   font-family: 'FontAwesome';
   font-size: 32px;
@@ -375,7 +380,7 @@ input[type=text], input[type=email], select,textarea {
   resize: vertical;
 }
 input[type=submit] {
-  background-color: #b34460;
+  background-color: var(--secondary);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -383,7 +388,7 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #a33e57;
+  background-color: #451e02;
 }
 .contact-form {
   width: 1000px;
