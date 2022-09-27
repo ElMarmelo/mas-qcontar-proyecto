@@ -18,7 +18,7 @@ const PATHS = {
     </div>
     <div class="about-us">
     <img src="./public/src/about-qc.jpg" alt="Imagen de fondo descripción de la empresa">
-    <div class="about-qc">
+    <div id="qc-info" class="about-qc">
     <p>
     La Lic. Rojas es una Contadora Privada Incorporada con la experiencia en la elaboración de información financiera, automatización y rediseño de procesos contables y financieros que inicia su emprendimiento de +QContar a inicios del año 2021 con la finalidad de brindar sus servicios profesionales a personas emprendedoras, con el propósito de asesorar a los clientes y encargarse de aspectos contables para hacer crecer sus negocios. <br>
     <br>
@@ -175,7 +175,41 @@ const PATHS = {
   },
   blog: {
     path: "/blog",
-    template: `<a id="blog1" onclick="ROUTER.load('blog1')">Entrada del blog</a>`,
+    template: `
+    <div class="info-divider">
+    <h1>Blog</h1>
+    <div>
+    <div class="blog-listing-container">
+    <div class="blogs-listing">
+    <div class="blogs-column">
+    <div class="blogs-card">
+    <h2>Entrada del blog 1</h2>
+    <p>Acá va una descripción corta de la entrada del blog</p>
+    <a <a id="blog1" onclick="ROUTER.load('blog1')">Leer más</a>
+    </div>
+    </div>
+    <div class="blogs-column">
+    <div class="blogs-card">
+    <h2>Entrada del blog 2</h2>
+    <p>Acá va una descripción corta de la entrada del blog</p>
+    <a id="blog2" onclick="ROUTER.load('blog2')">Leer más</a>
+    </div>
+    </div>
+    <div class="blogs-column">
+    <div class="blogs-card">
+    <h2>Entrada del blog 3</h2>
+    <p>Acá va una descripción corta de la entrada del blog</p>
+    <a <a id="blog3" onclick="ROUTER.load('blog3')">Leer Más</a>
+    </div>
+    </div>
+    <div class="blogs-column">
+    <div class="blogs-card">
+    <h2>Entrada del blog 4</h2>
+    <p>Acá va una descripción corta de la entrada del blog</p>
+    <a <a id="blog4" onclick="ROUTER.load('blog4')">Leer Más</a>
+    </div>
+    </div>
+    </div>`,
   },
   hablemos: {
     path: "/hablemos",
@@ -187,7 +221,7 @@ const PATHS = {
     
     <label for="name">Nombre</label>
     <input type="text" id="fname" name="firstname" placeholder="Su Nombre">
-
+    
     <label for="email">Correo electrónico</label>
     <input type="email" id="company-mail" name="companymail" placeholder="Su correo de la empresa">
     
@@ -218,6 +252,18 @@ const PATHS = {
   },
   blog1: {
     path: "/blog-1",
-    template: `<h1>Esta es la primera entrada del blog</h1>`
-  }
+    template: `<h1>Esta es la primera entrada del blog</h1>`,
+  },
+  blog2: {
+    path: "/blog-2",
+    template: `<h1>Esta es la segunda entrada del blog</h1>`,
+  },
+  blog3: {
+    path: "/blog-3",
+    template: `<h1>Esta es la tercera entrada del blog</h1>`,
+  },
+  blog4: {
+    path: "/blog-4",
+    template: `<h1>Esta es la cuarta entrada del blog</h1>`,
+  },
 };

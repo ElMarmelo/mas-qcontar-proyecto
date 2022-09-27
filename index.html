@@ -12,11 +12,17 @@
     <header class="">
         
         <nav class="navbar">
-            <img width="50px" height="50px" class="logo" src="./public/src/logoqc.png" alt="Logo Sitio web">
+            <a id="Home" onclick="ROUTER.load('home')" class="link-1"><img width="50px" height="50px" class="logo" src="./public/src/logoqc.png" alt="Logo Sitio web"></a> 
             <ul class="menu">
-                <li><a id="Home" onclick="ROUTER.load('home')">Home</a></li>
-                <li><a id="About" onclick="ROUTER.load('about')">Sobre Mí</a></</li>
-                <li><a id="Blog" onclick="ROUTER.load('blog')">Blog</a></</li>
+                <li>
+                    <a id="Home" onclick="ROUTER.load('home')">Home</a>
+                </li>
+                <li>
+                    <a id="About" href="#qc-info">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a id="Blog" onclick="ROUTER.load('blog')">Blog</a>
+                </li>
                 <li><a id="Hablemos" onclick="ROUTER.load('hablemos')">Hablemos</a></</li>
             </ul>
         </nav>
@@ -24,6 +30,7 @@
     
     <div id="content">
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <footer class="footer-distributed">
         <div class="footer-right">
             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -33,10 +40,9 @@
         </div>
         <div class="footer-le">
             <p class="footer-links">
-                <a href="" class="link-1">Home</a>
-                <a href="">Sobre mí</a>
-                <a href="">Blog</a>
-                <a href="">Hablemos</a>
+                <a id="Home" onclick="ROUTER.load('home')" class="link-1">Home</a>
+                <a href="#qc-info">Sobre nosotros</a>
+                <a id="Blog" onclick="ROUTER.load('blog')">Blog</a>
                 <a id="login" onclick="ROUTER.load('login')">Login</a>
             </p>
             <p style="color: #fff;">Hecho con <i class="fa fa-heart"></i> en <img width="17px" src="./public/src/bandera-cr.png" alt="Bandera de Costa Rica" srcset=""></p>

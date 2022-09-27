@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <script src="https://kit.fontawesome.com/709372f055.js" crossorigin="anonymous"></script>
+  <script
+  src="https://kit.fontawesome.com/709372f055.js"
+  crossorigin="anonymous"
+  ></script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
-  <div class="info-divider">
-    <h1>¿Qué espera para comunicarse con nosotros?</h1>
+  <div class="blog-listing-container">
+    <div class="blogs-listing">
+      <div class="blogs-column">
+        <div class="blogs-card">
+          <h2>Entrada del blog 1</h2>
+          <p>Acá va una descripción corta de la entrada del blog</p>
+          <a <a id="blog1" onclick="ROUTER.load('blog1')">Leer más</a>
+        </div>
+      </div>
+      <div class="blogs-column">
+        <div class="blogs-card">
+          <h2>Entrada del blog 1</h2>
+          <p>Acá va una descripción corta de la entrada del blog</p>
+          <a id="blog2" onclick="ROUTER.load('blog2')">Leer más</a>
+        </div>
+      </div>
+      <div class="blogs-column">
+        <div class="blogs-card">
+          <h2>Entrada del blog 1</h2>
+          <p>Acá va una descripción corta de la entrada del blog</p>
+          <a <a id="blog2" onclick="ROUTER.load('blog2')">Leer Más</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <a id="Hablemos" onclick="ROUTER.load('hablemos')">Hablemos</a>
-<!-- Pendiente agregar CTA para llevar al formulario -->
+  <!-- Pendiente agregar CTA para llevar al formulario -->
 </body>
-
 </html>
