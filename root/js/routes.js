@@ -39,15 +39,15 @@ const PATHS = {
     <i class="fas fa-calculator"></i>
     </div>
     <h3>Servicios Contables</h3>
-    <p>
-    Queremos conocerte y conocer tu negocio en una sesión 1:1. <br> Hablemos para entender tus necesidades y problemas de información contable y financiera.<br>
-    </p>
-    <h3> Este servicio es para vos si:</h3>
     <ul class="services-list">
     <li>Llevas mucho tiempo con ganas de poner en orden los números de tu negocio.</li> <br>
     <li>Eres emprendedor o quires emprender, pero no sabes cómo recopilar la información financiera de tu negocio</li> <br>
     <li>Quiere medir los resultados de tu negocio con mayor precisión y exactitud</li> <br>
     </ul>
+    <p>
+    Queremos conocerte y conocer tu negocio en una sesión 1:1. <br> Hablemos para entender tus necesidades y problemas de información contable y financiera.<br>
+    </p>
+    
     </div>
     </div>
     <div class="column">
@@ -58,13 +58,13 @@ const PATHS = {
     <h3>Presupuestos y análisis financieros</h3>
     <p>
     Te ayudamos a lograr tus metas a través de la planeación financiera. <br> Agendemos una sesión 1:1 y tracemos juntos los planes de acción para alcanzar los resultados deseados <br>
-    </p>
-    <h3> Este servicio es para vos si:</h3>
+    </p>    <br>
     <ul class="services-list">
     <li>Tienes expectativas monetarias para alcanzar en tu negocio, pero no sabes como establecer estrategias financieras.</li> <br>
     <li>Requieres organizar y revisar periódicamente las finanzas de tu negocio y medir los resultados que vas obteniendo.</li> <br>
     <li>Necesitas acompañamiento y apoyo para la interpretación de los resultados de tu negocio.</li> <br>
     </ul>
+
     </div>
     </div>
     <div class="column">
@@ -75,9 +75,8 @@ const PATHS = {
     <h3>Automatización y rediseño de procesos contables</h3>
     <p>
     Sabemos la importancia de tu tiempo como emprendedor, por eso queremos brindarte herramientas para obtener información financiera de forma ágil y oportuna. <br> Hablemos sobre tus necesidades de diseño y automatización de tu contabilidad. <br>
-    </p>
-    <h3> Este servicio es para vos si:</h3>
-    <ul class="services-list">
+    </p>    <br>
+        <ul class="services-list">
     <li>Requieres la información de tu negocio de forma eficiente y oportuna para la toma de decisiones.</li> <br>
     <li>Necesitas facilitad y sistematización en los procesos contables y administrativos.</li> <br>
     <li>Quieres gestionar, organizar, contabilizar y realizar seguimientos de tus informes financieros de forma eficaz.</li> <br>
@@ -93,7 +92,7 @@ const PATHS = {
     <p>
     Queremos que conozcas cuáles son tus obligaciones tributarias como emprendedor y sus implicaciones, y además queremos asesorarte especializadamente al realizar las gestiones fiscales requeridas por tu negocio. <br> Agendemos una sesión 1:1 conversemos sobre impuestos estatales y planifiquemos juntos la presentación de declaraciones tributarias de tu negocio.
     </p>
-    <h3> Este servicio es para vos si:</h3>
+    <br>
     <ul class="services-list">
     <li>Has adquirido algún tipo de obligación tributaria producto de tu negocio o actividad económica.</li> <br>
     <li>Eres emprendedor o quieres emprender, pero no sabes que implicaciones tributarias aplican para tu negocio.</li> <br>
@@ -110,7 +109,7 @@ const PATHS = {
     <p>
     Los talleres y charlas que impartimos no solo te ayudarán a mejorar tu relación con las finanzas, sino que te guiarán a conseguir tus sueños trazados en objetivos realistas.
     </p>
-    <h3> Este servicio es para vos si:</h3>
+    <br>
     <ul class="services-list">
     <li>Estás buscando libertad y conocimiento financiero para manejar mejor tus finanzas personales y empresariales.</li> <br>
     </ul>
@@ -125,7 +124,6 @@ const PATHS = {
     <p>
     Te ayudamos a lograr tus metas a través de la planeación financiera. <br> Agendemos una sesión 1:1 y tracemos juntos los planes de acción para alcanzar los resultados deseados <br>
     </p>
-    <h3> Este servicio es para vos si:</h3>
     <ul class="services-list">
     <li>Tienes expectativas monetarias para alcanzar en tu negocio, pero no sabes como establecer estrategias financieras.</li> <br>
     <li>Requieres organizar y revisar periódicamente las finanzas de tu negocio y medir los resultados que vas obteniendo.</li> <br>
@@ -166,6 +164,14 @@ const PATHS = {
     <h4>Empresa 3</h4>
     </figcaption>
     </figure>
+    </div>
+    <div class="info-divider">
+    <h1>¿Se encuentra listo para mejorar su negocio?</h1>
+    </div>
+    <div class="cta-focused">
+    <h2>En +QContar tenemos la mejor solución a sus problemas contables</h2>
+    <h3>Consulte por la variedad de servicios a su disposición</h3>
+    <a id="Hablemos" onclick="ROUTER.load('hablemos')" class="btn-cta">Quiero información</a>
     </div>`,
   },
   about: {
@@ -248,7 +254,29 @@ const PATHS = {
   },
   login: {
     path: "/login",
-    template: `<h1>Inicio de sesión como administrador<h1>`,
+    template: ` <div class="login-container"> <form action="#" method="post">
+    <div class="imgcontainer">
+      <img src="public/src/logoqc.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Nombre de usuario</b></label>
+      <input type="text" placeholder="Ingrese su nombre de usuario" name="uname" required>
+  
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingrese su contraseña" name="psw" required>
+  
+      <button type="submit">Iniciar sesión</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordarme
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancelar</button>
+      <span class="psw">¿Olvidó su <a href="#">Contraseña?</a></span>
+    </div>
+  </form> </div>`,
   },
   blog1: {
     path: "/blog-1",
